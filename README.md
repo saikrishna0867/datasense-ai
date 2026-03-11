@@ -202,24 +202,6 @@ http://localhost:3000
 
 ---
 
-## Sample Questions to Ask
-
-**Simple:**
-- Show total revenue by category
-- Which product generated the most revenue?
-- Compare sales across all regions
-
-**Intermediate:**
-- Show monthly revenue trend for 2024
-- Which sales representative performed the best?
-- Show top 5 cities by total revenue
-
-**Advanced:**
-- What is the impact of discount percentage on total revenue?
-- Show revenue trend by region month by month
-- Which city and product combination is most profitable?
-
----
 
 ## n8n Email Automation
 
@@ -244,19 +226,6 @@ GEMINI_API_KEY=your_gemini_api_key_here
 Get your free Gemini API key at: https://aistudio.google.com/app/apikey
 
 ---
-
-## Evaluation Criteria Coverage
-
-This project was built for a hackathon with the following evaluation criteria:
-
-| Criteria | Weight | How We Address It |
-|---|---|---|
-| Accuracy | 40% | 7-agent pipeline ensures correct SQL, right chart types, no hallucinations |
-| Aesthetics and UX | 30% | Clean Next.js UI, interactive Plotly charts, loading states, query history |
-| Innovation | 30% | LangGraph multi-agent architecture, RAG schema retrieval, n8n automation |
-| Bonus: CSV Upload | Extra | Users can upload any CSV and query it immediately |
-| Bonus: Follow-up Questions | Extra | Users can ask follow-up questions to refine results |
-
 ---
 
 ## Built With
@@ -271,13 +240,3 @@ This project was built for a hackathon with the following evaluation criteria:
 - [Pandas](https://pandas.pydata.org)
 
 ---
-
-## Hackathon
-
-Built for: Conversational AI for Instant Business Intelligence Dashboards Hackathon
-
-Team: DataSense AI
-
----
-
-*DataSense AI — Making business intelligence accessible to everyone.*
