@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; max-height: 0; }
+  to   { opacity: 1; max-height: 1000px; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+.animate-fadeIn        { animation: fadeInUp 0.5s ease-out forwards; }
+.animate-fadeInLeft    { animation: fadeInLeft 0.4s ease-out forwards; }
+.animate-fadeInScale   { animation: fadeInScale 0.4s ease-out forwards; }
+.animate-slideDown     { animation: slideDown 0.4s ease-out forwards; }
+.animate-countUp       { animation: countUp 0.6s ease-out forwards; }
+
+/* Staggered children */
+.stagger-children > *:nth-child(1) { animation-delay: 0.05s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.15s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.25s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.35s; }
+
+/* Chart card entrance */
+.chart-enter {
+  animation: fadeInScale 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.chart-enter-delay-1 { animation-delay: 0.1s; opacity: 0; }
+.chart-enter-delay-2 { animation-delay: 0.2s; opacity: 0; }
+.chart-enter-delay-3 { animation-delay: 0.3s; opacity: 0; }
+
+/* KPI card pop */
+.kpi-enter {
+  animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Dark mode card styles */
+.dark .bg-white          { background-color: #1e293b !important; }
+.dark .bg-gray-50        { background-color: #0f172a !important; }
+.dark .bg-gray-100       { background-color: #1e293b !important; }
+.dark .border-gray-100   { border-color: #334155 !important; }
+.dark .border-gray-200   { border-color: #334155 !important; }
+.dark .text-gray-900     { color: #f1f5f9 !important; }
+.dark .text-gray-800     { color: #e2e8f0 !important; }
+.dark .text-gray-700     { color: #cbd5e1 !important; }
+.dark .text-gray-600     { color: #94a3b8 !important; }
+.dark .text-gray-500     { color: #64748b !important; }
+.dark .text-gray-400     { color: #475569 !important; }
+.dark .shadow-sm         { box-shadow: 0 1px 3px rgba(0,0,0,0.4) !important; }
+.dark .shadow-2xl        { box-shadow: 0 25px 50px rgba(0,0,0,0.6) !important; }
+
+/* Dark gradient backgrounds */
+.dark .bg-gradient-to-br { background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a) !important; }
+.dark .bg-gradient-to-r  { background: linear-gradient(to right, #1e293b, #1e293b) !important; }
+.dark .from-slate-50     { --tw-gradient-from: #0f172a; }
+.dark .from-indigo-50    { --tw-gradient-from: #1e293b; }
+.dark .to-indigo-50      { --tw-gradient-to: #1e293b; }
+.dark .to-purple-50      { --tw-gradient-to: #1e293b; }
+
+/* Dark mode inputs */
+.dark input, .dark textarea, .dark select {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+.dark input::placeholder { color: #475569 !important; }
+
+/* Dark mode header */
+.dark header {
+  background-color: rgba(15, 23, 42, 0.9) !important;
+  border-color: #334155 !important;
+}
+
+/* Dark mode table */
+.dark table { color: #cbd5e1; }
+.dark th     { color: #94a3b8 !important; background-color: #1e293b !important; }
+.dark td     { color: #cbd5e1 !important; }
+.dark tr:hover { background-color: rgba(99, 102, 241, 0.1) !important; }
+
+/* Dark mode modals */
+.dark .fixed.inset-0 .bg-white {
+  background-color: #1e293b !important;
+}
+
+/* Dark mode buttons */
+.dark .hover\:bg-gray-50:hover  { background-color: #334155 !important; }
+.dark .hover\:bg-gray-100:hover { background-color: #334155 !important; }
+
+/* Dark Plotly */
+.dark .js-plotly-plot .plotly { background: transparent !important; }
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+
+::-webkit-scrollbar       { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+.dark ::-webkit-scrollbar-track { background: #1e293b; }
+.dark ::-webkit-scrollbar-thumb { background: #334155; }
+
+/* Responsive Plotly */
+.js-plotly-plot { width: 100% !important; }

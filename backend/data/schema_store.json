@@ -1,0 +1,113 @@
+{
+  "sales": {
+    "table_name": "sales",
+    "columns": [
+      "date",
+      "product",
+      "category",
+      "city",
+      "region",
+      "sales_rep",
+      "channel",
+      "quantity",
+      "unit_price",
+      "discount_percent",
+      "revenue",
+      "customer_rating",
+      "delivery_days"
+    ],
+    "dtypes": {
+      "date": "TEXT",
+      "product": "TEXT",
+      "category": "TEXT",
+      "city": "TEXT",
+      "region": "TEXT",
+      "sales_rep": "TEXT",
+      "channel": "TEXT",
+      "quantity": "INTEGER",
+      "unit_price": "REAL",
+      "discount_percent": "INTEGER",
+      "revenue": "REAL",
+      "customer_rating": "REAL",
+      "delivery_days": "INTEGER"
+    },
+    "row_count": 200,
+    "sample_rows": [
+      {
+        "date": "2024-01-07",
+        "product": "IKEA Standing Desk",
+        "category": "Home",
+        "city": "Ahmedabad",
+        "region": "West",
+        "sales_rep": "Ravi Kumar",
+        "channel": "Retail Store",
+        "quantity": 6,
+        "unit_price": 296.65,
+        "discount_percent": 15,
+        "revenue": 1779.9,
+        "customer_rating": 4.6,
+        "delivery_days": 4
+      },
+      {
+        "date": "2024-01-16",
+        "product": "Samsung Galaxy S24",
+        "category": "Electronics",
+        "city": "Ahmedabad",
+        "region": "West",
+        "sales_rep": "Sneha Reddy",
+        "channel": "Retail Store",
+        "quantity": 11,
+        "unit_price": 849.0,
+        "discount_percent": 0,
+        "revenue": 9339.0,
+        "customer_rating": 4.2,
+        "delivery_days": 4
+      },
+      {
+        "date": "2024-01-19",
+        "product": "Philips Hue Starter",
+        "category": "Home",
+        "city": "Delhi",
+        "region": "North",
+        "sales_rep": "Arjun Patel",
+        "channel": "Online",
+        "quantity": 6,
+        "unit_price": 129.0,
+        "discount_percent": 0,
+        "revenue": 774.0,
+        "customer_rating": 5.0,
+        "delivery_days": 4
+      },
+      {
+        "date": "2024-01-20",
+        "product": "Sony WH-1000XM5",
+        "category": "Electronics",
+        "city": "Lucknow",
+        "region": "North",
+        "sales_rep": "Sneha Reddy",
+        "channel": "Online",
+        "quantity": 12,
+        "unit_price": 314.1,
+        "discount_percent": 10,
+        "revenue": 3769.2,
+        "customer_rating": 4.2,
+        "delivery_days": 5
+      },
+      {
+        "date": "2024-01-22",
+        "product": "Zara Winter Jacket",
+        "category": "Fashion",
+        "city": "Kolkata",
+        "region": "East",
+        "sales_rep": "Ravi Kumar",
+        "channel": "Online",
+        "quantity": 4,
+        "unit_price": 122.55,
+        "discount_percent": 5,
+        "revenue": 490.2,
+        "customer_rating": 4.5,
+        "delivery_days": 3
+      }
+    ]
+  }
+}
